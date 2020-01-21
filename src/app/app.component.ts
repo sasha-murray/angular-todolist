@@ -11,14 +11,11 @@ import { Todo } from './todo';
 })
 export class AppComponent {
 
-  newTodo: Todo = new Todo();
-
   constructor(private todoService: TodoService) {
   }
 
-  addTodo() {
-    this.todoService.addTodo(this.newTodo);
-    this.newTodo = new Todo();
+  onAddTodo(todo: Todo) {
+    this.todoService.addTodo(todo);
   }
 
   toggleTodoComplete(todo) {
