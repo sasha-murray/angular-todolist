@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TodoListFooterComponent } from './todo-list-footer.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('TodoListFooterComponent', () => {
   let component: TodoListFooterComponent;
@@ -8,7 +9,8 @@ describe('TodoListFooterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TodoListFooterComponent ]
+      declarations: [ TodoListFooterComponent ],
+      schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));
