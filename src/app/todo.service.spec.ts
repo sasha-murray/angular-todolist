@@ -71,42 +71,42 @@ describe('TodoService', () => {
 
   });
 
-  describe('#updateTodoByID(id, values)', () => {
+  // describe('#updateTodoByID(id, values)', () => {
 
-    it('should return todo with the corresponding id and updated data', () => {
-      const service: TodoService = TestBed.get(TodoService);
-      let todo = new Todo({title: 'Hello 1', complete: false});
-      service.addTodo(todo);
-      let updatedTodo = service.updateTodoByID(1, {
-        title: 'new title'
-      });
-      expect(updatedTodo.title).toEqual('new title');
-    });
+  //   it('should return todo with the corresponding id and updated data', () => {
+  //     const service: TodoService = TestBed.get(TodoService);
+  //     let todo = new Todo({title: 'Hello 1', complete: false});
+  //     service.addTodo(todo);
+  //     let updatedTodo = service.updateTodoByID(1, {
+  //       title: 'new title'
+  //     });
+  //     expect(updatedTodo.title).toEqual('new title');
+  //   });
 
-    it('should return null if todo is not found', () => {
-      const service: TodoService = TestBed.get(TodoService);
-      let todo = new Todo({title: 'Hello 1', complete: false});
-      service.addTodo(todo);
-      let updatedTodo = service.updateTodoByID(2, {
-        title: 'new title'
-      });
-      expect(updatedTodo).toEqual(null);
-    });
+  //   it('should return null if todo is not found', () => {
+  //     const service: TodoService = TestBed.get(TodoService);
+  //     let todo = new Todo({title: 'Hello 1', complete: false});
+  //     service.addTodo(todo);
+  //     let updatedTodo = service.updateTodoByID(2, {
+  //       title: 'new title'
+  //     });
+  //     expect(updatedTodo).toEqual(null);
+  //   });
 
-  });
+  // });
 
-  describe('#toggleTodoComplete(todo)', () => {
+  // describe('#toggleTodoComplete(todo)', () => {
 
-    it('should return the updated todo with inverse complete status', () => {
-      const service: TodoService = TestBed.get(TodoService);
-      let todo = new Todo({title: 'Hello 1', complete: false});
-      service.addTodo(todo);
-      let updatedTodo = service.toggleTodoComplete(todo);
-      expect(updatedTodo.complete).toEqual(true);
-      service.toggleTodoComplete(todo);
-      expect(updatedTodo.complete).toEqual(false);
-    });
+  //   it('should return the updated todo with inverse complete status', () => {
+  //     const service: TodoService = TestBed.get(TodoService);
+  //     let todo = new Todo({title: 'Hello 1', complete: false});
+  //     service.addTodo(todo);
+  //     let updatedTodo = service.toggleTodoComplete(todo);
+  //     expect(updatedTodo.complete).toEqual(true);
+  //     service.toggleTodoComplete(todo);
+  //     expect(updatedTodo.complete).toEqual(false);
+  //   });
 
-  });
+  // });
 
 });
