@@ -24,7 +24,7 @@ import { ApiService } from './api.service';
     FormsModule,
     HttpClientModule
   ],
-  providers: [TodoService, ApiService],
+  providers: [HttpClientModule, TodoService, ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
