@@ -1,0 +1,19 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Build CRUD App in Angular",
+      "complete": false
+    },
+    {
+      "id": 2,
+      "title": "Go For a Walk",
+      "complete": false
+    },
+    {
+      "id": 3,
+      "title": "Drink Coffee",
+      "complete": true
+    }
+  ]
+}
