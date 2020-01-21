@@ -7,7 +7,7 @@ import { Todo } from './todo';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
-  providers: [TodoService]
+  providers: []
 })
 export class AppComponent {
 
