@@ -1,16 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Todo } from './todo';
 import { ApiService } from './api.service';
-// import { Observable } from 'rxjs/Observable';
 import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TodoService {
-  // lastId: number = 0;
-
-  // todos: Todo[] = [];
 
   constructor(
     private api: ApiService
